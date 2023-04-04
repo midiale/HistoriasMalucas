@@ -1,0 +1,38 @@
+﻿@using EstoriasMalucas.Models 
+@model Formulario
+
+<div class="caixa d-flex col-md-12" id="size">
+    <div class="item col-md-2" style="border: 1px solid black;">
+        Publicidade   
+    </div>
+    <div class="item col-md-8 " style="background-image: url('/imagens/Qual.gif');">
+        <form asp-action="Index">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-row centraliza">
+               <div class="form-group col-md-5" >
+                   <label style="color:yellow">Nome</label>
+                    <input asp-for="UsuarioName" class="form-control" placeholder="Digite seu nome"/>
+                    <span asp-validation-for="UsuarioName" class="text-danger"></span>
+                </div>
+                <hr>
+                <div class="form-group col-md-2">
+                    <label style="color:yellow">Idade</label>
+                    <input asp-for="Idade" class="form-control" placeholder="Idade" />
+                     <span asp-validation-for="Idade" class="text-danger" ></span>
+                </div>
+                <hr>
+                <div class="form-group col-md-2">
+                <input type="submit" class="btn btn-danger" value="Entrar" />
+                </div>
+                           
+            </div>
+        </form>
+        
+    </div>
+    <div class="item col-md-2" style="border: 1px solid black;">
+        Publicidade
+    </div>
+ </div>
+
+    
+

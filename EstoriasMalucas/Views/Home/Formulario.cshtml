@@ -1,0 +1,77 @@
+﻿@using EstoriasMalucas.Models
+@model Formulario
+
+<div class="caixa d-flex col-md-12" >
+    <div class="item col-md-2" style="border: 1px solid black;">
+        Publicidade
+    </div>
+    
+    <div class="item col-md-8 " style="border: 1px solid">
+        <div style="background-color:deeppink"> Olá <strong>@TempData["Nome"]</strong> , vamos começar a brincadeira. Escolha 5 AMIGAS</div>
+        <hr>
+        <form asp-action="Formulario">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="UsuarioName" />
+            <div class="form-group col-md-5">
+                <label style="color:deeppink">Amiga 1</label>
+                <input asp-for="Amiga2" class="form-control" />
+                <span asp-validation-for="Amiga2" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-5">
+                <label style="color:deeppink">Amiga 2</label>
+                <input asp-for="Amiga4" class="form-control" />
+                <span asp-validation-for="Amiga4" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-5">
+                <label style="color:deeppink">Amiga 3</label>
+                <input asp-for="Amiga6" class="form-control" />
+                <span asp-validation-for="Amiga6" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-5">
+                <label style="color:deeppink">Amiga 4</label>
+                <input asp-for="Amiga8" class="form-control" />
+                <span asp-validation-for="Amiga8" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-5">
+                <label style="color:deeppink">Amiga 5</label>
+                <input asp-for="Amiga10" class="form-control" />
+                <span asp-validation-for="Amiga10" class="text-danger"></span>
+            </div>
+            <hr />
+            <div style="background-color: blue; color: white"> <strong>@TempData["Nome"]</strong> , agora escolha 5 AMIGOS</div>
+            <br />
+            <div class="form-group col-md-5">
+                <label style="color:blue">Amigo 1</label>
+                <input asp-for="Amigo1" class="form-control" />
+                <span asp-validation-for="Amigo1" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-5">
+                <label style="color:blue">Amigo 2</label>
+                <input asp-for="Amigo3" class="form-control" />
+                <span asp-validation-for="Amigo3" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-5">
+                <label style="color:blue">Amigo 3</label>
+                <input asp-for="Amigo5" class="form-control" />
+                <span asp-validation-for="Amigo5" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-5">
+                <label style="color:darkblue">Amigo 4</label>
+                <input asp-for="Amigo7" class="form-control" />
+                <span asp-validation-for="Amigo7" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-5">
+                <label style="color:blue">Amigo 5</label>
+                <input asp-for="Amigo9" class="form-control" />
+                <span asp-validation-for="Amigo9" class="text-danger"></span>
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="submit" value="Criar História" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+    <div class="item col-md-2" style="border: 1px solid black;">
+        Publicidade
+    </div>
+</div>
